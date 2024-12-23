@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background:url(https://img.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg) no-repeat center/cover;
+        }
+
+        header {
+            background: linear-gradient(45deg, #FF0800, #960018);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a,
+        .dropdown button {
+            color: white;
+            text-decoration: none;
+            margin: 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        nav a:hover,
+        .dropdown button:hover {
+            background-color: #575757;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 150px;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 15rem 1rem;
+            background: url(https://t3.ftcdn.net/jpg/02/14/53/92/360_F_214539232_YnUrtuwUEt84gHuU0qG8l7OwZvH4rnPG.jpg) no-repeat center/cover;
+            color: red;
+        }
+
+        .box1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px;
+        }
+
+        .boxP {
+            margin: 8px;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 15px;
+            flex: 1 1 calc(25% - 20px);
+            box-sizing: border-box;
+        }
+
+        .boxP img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .containerA,
+        .containerB {
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .containerbox {
+            border: 1px solid black;
+            padding: 1rem;
+            flex: 1 1 calc(45% - 20px);
+            box-sizing: border-box;
+            max-width: 400px;
+        }
+
+        .features,
+        .product {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: yellow;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .boxP {
+                flex: 1 1 calc(50% - 20px);
+            }
+
+            .containerbox {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .boxP {
+                flex: 1 1 100%;
+            }
+
+            .hero {
+                padding: 10rem 1rem;
+            }
+
+            .containerbox {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Product of Web Developer Page</h1>
+        <p>Get ready for your coding journey with your web development subject!</p>
+    </header>
+    <nav>
+        <a href="#features">Web Subjects</a>
+        <a href="#product">Product</a>
+        <div class="dropdown">
+            <button>More</button>
+            <div class="dropdown-content">
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <!-- <h1>Discover the Future</h1>
+        <p>Transform your life with our cutting-edge product</p> -->
+    </section>
+    <section id="features" class="features">
+        <div class="box1">
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <div class="boxP">
+                <img src="https://via.placeholder.com/150" alt="Web Subjects">
+                <h3>Web Subjects</h3>
+                <p>Experience unparalleled quality and design.</p>
+            </div>
+            <!-- Add other feature cards here -->
+        </div>
+    </section>
+    <div class="containerA">
+        <div class="containerbox">
+            <section id="product" class="product">
+                <h2>Our Product</h2>
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <p>High-quality, user-friendly, and reliable. Our product meets all your needs.</p>
+                <p><strong>Price:</strong> ₹ 9,00,000</p>
+            </section>
+        </div>
+        <div class="containerbox">
+            <section id="product" class="product">
+                <h2>Our Product</h2>
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <p>High-quality, user-friendly, and reliable. Our product meets all your needs.</p>
+                <p><strong>Price:</strong> ₹ 9,00,000</p>
+            </section>
+        </div>
+        <div class="containerbox">
+            <section id="product" class="product">
+                <h2>Our Product</h2>
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <p>High-quality, user-friendly, and reliable. Our product meets all your needs.</p>
+                <p><strong>Price:</strong> ₹ 9,00,000</p>
+            </section>
+        </div>
+        <div class="containerbox">
+            <section id="product" class="product">
+                <h2>Our Product</h2>
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <p>High-quality, user-friendly, and reliable. Our product meets all your needs.</p>
+                <p><strong>Price:</strong> ₹ 9,00,000</p>
+            </section>
+        </div>
+        <div class="containerbox">
+            <section id="product" class="product">
+                <h2>Our Product</h2>
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <p>High-quality, user-friendly, and reliable. Our product meets all your needs.</p>
+                <p><strong>Price:</strong> ₹ 9,00,000</p>
+            </section>
+        </div>
+        <div class="containerbox">
+            <section id="product" class="product">
+                <h2>Our Product</h2>
+                <img src="https://via.placeholder.com/300" alt="Product Image">
+                <p>High-quality, user-friendly, and reliable. Our product meets all your needs.</p>
+                <p><strong>Price:</strong> ₹ 9,00,000</p>
+            </section>
+        </div>
+        <!-- Add more product boxes here -->
+    </div>
+    <footer id="contact">
+        <p>Contact us at: <a href="mailto:support@example.com">support@example.com</a></p>
+        <p>&copy; 2024 Product of Web Development Page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
